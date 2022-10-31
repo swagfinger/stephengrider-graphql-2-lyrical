@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 import { graphql } from 'react-apollo';
-
 import fetchSong from '../queries/fetchSong';
+
 import LyricCreate from './LyricCreate';
 import LyricList from './LyricList';
 

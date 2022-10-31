@@ -9,7 +9,8 @@ const app = express();
 
 // Replace with your mongoLab URI
 const MONGO_URI =
-  'mongodb://swagfinger:CS59CuARgrsZz0Uv@ac-0aohmjo-shard-00-00.csewzba.mongodb.net:27017,ac-0aohmjo-shard-00-01.csewzba.mongodb.net:27017,ac-0aohmjo-shard-00-02.csewzba.mongodb.net:27017/?ssl=true&replicaSet=atlas-5na8k6-shard-0&authSource=admin&retryWrites=true&w=majority';
+  'mongodb://swagfinger:lFjqGoYO38s1baDT@ac-rfmwmlq-shard-00-00.2wxkdct.mongodb.net:27017,ac-rfmwmlq-shard-00-01.2wxkdct.mongodb.net:27017,ac-rfmwmlq-shard-00-02.2wxkdct.mongodb.net:27017/?ssl=true&replicaSet=atlas-lkmv9j-shard-0&authSource=admin&retryWrites=true&w=majority';
+
 if (!MONGO_URI) {
   throw new Error('You must provide a MongoLab URI');
 }

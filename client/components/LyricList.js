@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
-import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
+
+import mutation from '../queries/likeLyric';
 
 class LyricList extends Component {
   onLike(id, likes) {
@@ -44,14 +45,5 @@ class LyricList extends Component {
     return <ul className="collection">{this.renderLyrics()}</ul>;
   }
 }
-
-const mutation = gql`
-  mutation LikeLyrics($id: ID) {
-    likeLyric(id: $id) {
-      id
-      likes
-    }
-  }
-`;
 
 export default graphql(mutation)(LyricList);
