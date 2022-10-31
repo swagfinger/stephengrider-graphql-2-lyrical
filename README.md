@@ -1,5 +1,10 @@
 # Lyrical-GraphQL
 
+## installation
+
+- uninstall "mongoose": "^4.7.8"
+- npm i mongoose@6.3.6
+
 Starter project from a GraphQL course on Udemy.com
 
 ## Apollo Provider / Apollo Store
